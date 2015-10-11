@@ -45,7 +45,7 @@ angular.module('starter', ['ionic'])
     views: {
       'tab-dash': {
         templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+        controller: 'DashCtrl as dash'
       }
     }
   })
@@ -55,7 +55,7 @@ angular.module('starter', ['ionic'])
       views: {
         'tab-officials': {
           templateUrl: 'templates/officials/tab-officials.html',
-          controller: 'OfficialsCtrl'
+          controller: 'OfficialsCtrl as officials'
         }
       }
     })
@@ -73,7 +73,7 @@ angular.module('starter', ['ionic'])
       views: {
         'tab-officials': {
           templateUrl: 'templates/officials/official-detail.html',
-          controller: 'OfficialDetailCtrl'
+          controller: 'OfficialDetailCtrl as officialDetail'
         }
       }
     })
@@ -83,7 +83,7 @@ angular.module('starter', ['ionic'])
       views: {
         'tab-categories': {
           templateUrl: 'templates/categories/tab-categories.html',
-          controller: 'CategoriesCtrl'
+          controller: 'CategoriesCtrl as categories'
         }
       }
     })
@@ -92,7 +92,7 @@ angular.module('starter', ['ionic'])
       views: {
         'tab-categories': {
           templateUrl: 'templates/categories/category-detail.html',
-          controller: 'CategoryDetailCtrl'
+          controller: 'CategoryDetailCtrl as categoryDetail'
         }
       }
     })

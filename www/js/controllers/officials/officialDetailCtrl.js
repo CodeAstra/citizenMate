@@ -1,4 +1,5 @@
 angular.module('starter')
-  .controller('OfficialDetailCtrl', function($scope, $stateParams, Chats) {
-    $scope.chat = Chats.get($stateParams.officialId);
+  .controller('OfficialDetailCtrl', function($stateParams, Officials) {
+    var officialDetail = this;
+    officialDetail.official = Officials.get($stateParams.officialId);
   });

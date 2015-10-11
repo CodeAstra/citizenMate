@@ -1,4 +1,5 @@
 angular.module('starter')
-  .controller('CategoryDetailCtrl', function($scope, $stateParams, Chats) {
-    $scope.chat = Chats.get($stateParams.chatId);
+  .controller('CategoryDetailCtrl', function($stateParams, Categories) {
+    var categoryDetail = this;
+    categoryDetail.category = Categories.get($stateParams.categoryId);
   });

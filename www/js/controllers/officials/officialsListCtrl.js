@@ -1,5 +1,5 @@
 angular.module('starter')
-  .controller('OfficialsListCtrl', function($scope, Officials) {
+  .controller('OfficialsListCtrl', function(Officials) {
     var officialsList = this;
     officialsList.officials = Officials.all();
   });

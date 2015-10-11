@@ -4,7 +4,7 @@ angular.module('starter')
       id: 0,
       name: 'Sri K. Chandrashekar Rao',
       constituency: 'Gajwel',
-      ministry: 'Chief Minister, SC, Minorities Welfare, Municipal Administration & Urban Development, Coal, GAD and All other portfolios not alloted',
+      ministry: 'Chief Minister, SC, Minorities Welfare, Municipal Administration & Urban Development, Coal, GAD, All other portfolios not alloted',
       image: 'kcr.jpg'
     }, {
       id: 1,
