@@ -64,7 +64,7 @@ angular.module('starter', ['ionic'])
       views: {
         'tab-officials': {
           templateUrl: 'templates/officials/tab-officials-list.html',
-          controller: 'OfficialsListCtrl'
+          controller: 'OfficialsListCtrl as officialsList'
         }
       }
     })
