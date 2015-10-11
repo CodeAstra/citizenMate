@@ -102,7 +102,7 @@ angular.module('starter', ['ionic'])
       views: {
         'tab-votes': {
           templateUrl: 'templates/votes/tab-votes.html',
-          controller: 'VotesCtrl'
+          controller: 'VotesCtrl as votes'
         }
       }
     })
@@ -111,7 +111,7 @@ angular.module('starter', ['ionic'])
       views: {
         'tab-votes': {
           templateUrl: 'templates/votes/vote-detail.html',
-          controller: 'VoteDetailCtrl'
+          controller: 'VoteDetailCtrl as voteDetail'
         }
       }
     })

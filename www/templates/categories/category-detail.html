@@ -1,12 +1,34 @@
 <ion-view view-title="Category Details">
-  <ion-content class="padding">
-    <h2>{{categoryDetail.category.name}}</h2>
-    <div class="button-bar">
-      <a class="button activated">About</a>
-      <a class="button">Polls</a>
+  <ion-content>
+    <div class="bar bar-header">
+      <div class="button-bar">
+        <a class="button activated">About</a>
+        <a class="button">Votes</a>
+      </div>
     </div>
-    <p class="padding-top">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A saepe cum vel neque placeat, est nam error voluptatum quae eveniet ipsam quasi nesciunt illum repudiandae nisi doloribus, ab, atque nemo!
-    </p>
+    <br>
+    <br>
+    <div class="padding">
+      <div class="list">
+        <div class="item item-button-right">
+          {{categoryDetail.category.name}}
+          <button class="button button-clear button-energized">
+            <i class="icon ion-star"></i>
+          </button>
+        </div>
+        <div class="item item-text-wrap">
+          <p><b>Overview</b></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolores, ratione officia sapiente numquam fuga, excepturi aliquid inventore dignissimos tempora natus quam similique saepe aperiam, molestias placeat expedita voluptatum ad!</p>
+          <br>
+          <p><b>Legislation</b></p>
+          <p>Fugiat adipisci rerum itaque consectetur dolore similique repellat culpa dolor dolorum a, cupiditate deserunt optio quam accusamus laudantium tempora ut officiis! In temporibus error nemo laboriosam maxime praesentium distinctio commodi?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi asperiores, accusamus tempora maiores, qui similique natus magnam possimus neque placeat architecto dolor corporis ipsum! Nostrum libero saepe, corporis ipsum hic.</p>
+          <br>
+          <p><b>Timeline</b></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate explicabo, illo asperiores commodi aut rem praesentium nulla quos voluptate suscipit, deleniti earum? Commodi voluptates asperiores, placeat temporibus, est ipsa.</p>
+          <p>Necessitatibus quis ad voluptate. Vero expedita consectetur deserunt adipisci voluptatum cupiditate, aut amet delectus explicabo, nostrum officia praesentium, odio atque beatae perferendis ex recusandae quod! Delectus quod perferendis iusto minima.</p>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

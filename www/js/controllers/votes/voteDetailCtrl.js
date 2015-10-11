@@ -1,4 +1,5 @@
 angular.module('starter')
-  .controller('VoteDetailCtrl', function($scope, $stateParams, Chats) {
-    $scope.chat = Chats.get($stateParams.chatId);
+  .controller('VoteDetailCtrl', function($stateParams, Votes) {
+    var voteDetail = this;
+    voteDetail.vote = Votes.get($stateParams.voteId);
   });

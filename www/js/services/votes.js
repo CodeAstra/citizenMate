@@ -1,9 +1,9 @@
 angular.module('starter')
-  .factory('Chats', function() {
+  .factory('Votes', function() {
     // Might use a resource here that returns a JSON array
 
     // Some fake testing data
-    var chats = [{
+    var votes = [{
       id: 0,
       name: 'Ben Sparrow',
       lastText: 'You on your way?',
@@ -32,15 +32,12 @@ angular.module('starter')
 
     return {
       all: function() {
-        return chats;
+        return votes;
       },
-      remove: function(chat) {
-        chats.splice(chats.indexOf(chat), 1);
-      },
-      get: function(chatId) {
-        for (var i = 0; i < chats.length; i++) {
-          if (chats[i].id === parseInt(chatId)) {
-            return chats[i];
+      get: function(voteId) {
+        for (var i = 0; i < votes.length; i++) {
+          if (votes[i].id === parseInt(voteId)) {
+            return votes[i];
           }
         }
         return null;
