@@ -7,13 +7,21 @@ angular.module('starter')
       downVotes: []
     };
 
-
-
     function removeElementFromArray(array, ele) {
       var index = array.indexOf(ele);
 
       if (index != -1) {
         array.splice(index, 1)
+      }
+    };
+
+    function toggleElementInArray(array, ele) {
+      var index = array.indexOf(ele);
+
+      if (index != -1) {
+        array.splice(index, 1)
+      } else {
+        array.push(ele);
       }
     };
 
@@ -45,6 +53,22 @@ angular.module('starter')
 
     user.votedFor = function(vote) {
       return (user.upVoted(vote) || user.downVoted(vote));
+    };
+
+    user.toggleFollowOfficial = function(official) {
+      toggleElementInArray(user.followingOfficials, official.id);
+    };
+
+    user.followedOfficial = function(official) {
+      return (user.followingOfficials.indexOf(official.id) != -1)
+    };
+
+    user.toggleFollowCategory = function(category) {
+      toggleElementInArray(user.followingCategories, category.id);
+    };
+
+    user.followedCategory = function(category) {
+      return (user.followingCategories.indexOf(category.id) != -1)
     };
 
     return user;

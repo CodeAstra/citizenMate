@@ -10,10 +10,13 @@
     <br>
     <div class="padding">
       <div class="list">
-        <div class="item item-button-right">
+        <div class="item item-button-right" ng-click="categoryDetail.toggleFollowCategory(categoryDetail.category)">
           <b>{{categoryDetail.category.name}}</b>
-          <button class="button button-clear button-energized">
-            <i class="icon ion-star"></i>
+          <button class="button button-clear button-energized" ng-show="categoryDetail.followedCategory(categoryDetail.category)">
+            <i class="icon ion-ios-star"></i>
+          </button>
+          <button class="button button-clear button-stable" ng-hide="categoryDetail.followedCategory(categoryDetail.category)">
+            <i class="icon ion-ios-star-outline"></i>
           </button>
         </div>
         <div class="item item-text-wrap">
