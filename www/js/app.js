@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/officials',
       views: {
         'tab-officials': {
-          templateUrl: 'templates/tab-officials.html',
+          templateUrl: 'templates/officials/tab-officials.html',
           controller: 'OfficialsCtrl'
         }
       }
@@ -63,7 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/officials/:officialId',
       views: {
         'tab-officials': {
-          templateUrl: 'templates/official-detail.html',
+          templateUrl: 'templates/officials/official-detail.html',
           controller: 'OfficialDetailCtrl'
         }
       }
@@ -73,7 +73,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/categories',
       views: {
         'tab-categories': {
-          templateUrl: 'templates/tab-categories.html',
+          templateUrl: 'templates/categories/tab-categories.html',
           controller: 'CategoriesCtrl'
         }
       }
@@ -82,7 +82,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/categories/:categoryId',
       views: {
         'tab-categories': {
-          templateUrl: 'templates/category-detail.html',
+          templateUrl: 'templates/categories/category-detail.html',
           controller: 'CategoryDetailCtrl'
         }
       }
@@ -92,7 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/votes',
       views: {
         'tab-votes': {
-          templateUrl: 'templates/tab-votes.html',
+          templateUrl: 'templates/votes/tab-votes.html',
           controller: 'VotesCtrl'
         }
       }
@@ -101,7 +101,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/votes/:voteId',
       views: {
         'tab-votes': {
-          templateUrl: 'templates/vote-detail.html',
+          templateUrl: 'templates/votes/vote-detail.html',
           controller: 'VoteDetailCtrl'
         }
       }
