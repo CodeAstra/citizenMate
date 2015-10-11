@@ -1,40 +1,40 @@
 angular.module('starter')
   .factory('Categories', function() {
     var categories = [{
-      id: 0,
-      name: 'Budget'
-    }, {
       id: 1,
       name: 'Agriculture'
     }, {
       id: 2,
-      name: 'Campaign Finance'
+      name: 'Budget'
     }, {
       id: 3,
-      name: 'Civil Rights'
+      name: 'Campaign Finance'
     }, {
       id: 4,
-      name: 'Defence'
+      name: 'Civil Rights'
     }, {
       id: 5,
-      name: 'Education'
+      name: 'Defence'
     }, {
       id: 6,
-      name: 'Environment'
-    }, {
-      id: 7,
       name: 'Education'
     }, {
+      id: 7,
+      name: 'Energy'
+    }, {
       id: 8,
-      name: 'Information Technology'
+      name: 'Environment'
     }, {
       id: 9,
-      name: 'Tax'
+      name: 'Information Technology'
     }, {
       id: 10,
-      name: 'Tourism'
+      name: 'Tax'
     }, {
       id: 11,
+      name: 'Tourism'
+    }, {
+      id: 12,
       name: 'Transportation'
     }];
 

@@ -9,12 +9,39 @@
     <br>
     <br>
     <br>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="vote in votes.votes" type="item-text-wrap" href="#/tab/votes/{{vote.id}}">
-        <img ng-src="{{vote.face}}">
-        <h2>{{vote.name}}</h2>
-        <p>{{vote.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+    <ion-list id="votes">
+      <ion-item ng-repeat="vote in votes.votes" type="item-text-wrap" class="vote">
+        <div class="metadata clearfix">
+          <div class="author">
+            <img ng-src="img/officials/{{votes.author(vote).image}}">
+            <span class="name">{{votes.author(vote).name}}</span>
+          </div>
+          <div class="category">
+            {{votes.category(vote).name}}
+          </div>
+        </div>
+        <p class="question">{{vote.question}}</p>
+        <div class="my-vote">
+          <button class="button button-clear button-light">
+            <i class="icon ion-thumbsup"></i>
+          </button>
+          <button class="button button-clear button-light">
+            <i class="icon ion-thumbsdown"></i>
+          </button>
+        </div>
+        <div class="pending-result">
+          <span>Vote to see results</span>
+        </div>
+        <div class="result">
+          <button class="button button-clear button-balanced">
+            <i class="icon ion-thumbsup"></i>
+            {{vote.totalAgree}}</p>
+          </button>
+          <button class="button button-clear button-assertive">
+            <i class="icon ion-thumbsdown"></i>
+            {{vote.totalDisagree}}</p>
+          </button>
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>

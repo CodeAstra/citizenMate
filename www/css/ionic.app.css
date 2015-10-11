@@ -9290,3 +9290,41 @@ a.button {
 #official img.official-image {
   float: left;
   margin-right: 10px; }
+
+#votes .vote .metadata {
+  font-size: 0.8em; }
+  #votes .vote .metadata .author img {
+    height: 2em;
+    border-radius: 50%;
+    float: left; }
+  #votes .vote .metadata .author .name {
+    line-height: 2em;
+    margin-left: 0.5em;
+    float: left; }
+  #votes .vote .metadata .category {
+    float: right;
+    line-height: 2em; }
+
+#votes .vote .question {
+  font-size: 1.5em;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.3em;
+  margin: 0.5em; }
+
+#votes .vote .my-vote {
+  text-align: center; }
+  #votes .vote .my-vote i:before {
+    font-size: 2.5em; }
+
+#votes .vote .pending-result {
+  text-align: center; }
+  #votes .vote .pending-result span {
+    background-color: #ddd;
+    padding: 0.7em 2em;
+    display: inline-block;
+    margin-top: 1em;
+    border-radius: 1em; }
+
+#votes .vote .result {
+  text-align: center; }

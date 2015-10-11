@@ -4,30 +4,40 @@ angular.module('starter')
 
     // Some fake testing data
     var votes = [{
-      id: 0,
-      name: 'Ben Sparrow',
-      lastText: 'You on your way?',
-      face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
-    }, {
       id: 1,
-      name: 'Max Lynx',
-      lastText: 'Hey, it\'s me',
-      face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+      categoryId: 2,
+      question: 'Should India spend more on its space program?',
+      authorId: 4,
+      totalAgree: 2345,
+      totalDisagree: 2345
     }, {
       id: 2,
-      name: 'Adam Bradleyson',
-      lastText: 'I should buy a boat',
-      face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      categoryId: 6,
+      question: 'Should computer education be brought to computer education?',
+      authorId: 2,
+      totalAgree: 2345,
+      totalDisagree: 2345
     }, {
       id: 3,
-      name: 'Perry Governor',
-      lastText: 'Look at my mukluks!',
-      face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
+      categoryId: 4,
+      question: 'Do you support same-sex marraige?',
+      authorId: 1,
+      totalAgree: 2345,
+      totalDisagree: 2345
     }, {
       id: 4,
-      name: 'Mike Harrington',
-      lastText: 'This is wicked good ice cream.',
-      face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
+      categoryId: 2,
+      question: 'Should all taxes be merged into a single tax?',
+      authorId: 4,
+      totalAgree: 2345,
+      totalDisagree: 2345
+    }, {
+      id: 5,
+      categoryId: 7,
+      question: 'Do you favour increased development of nuclear power plants in India?',
+      authorId: 5,
+      totalAgree: 2345,
+      totalDisagree: 2345
     }];
 
     return {
