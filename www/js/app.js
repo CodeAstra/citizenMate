@@ -50,31 +50,69 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.officials', {
+      url: '/officials',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-officials': {
+          templateUrl: 'templates/tab-officials.html',
+          controller: 'OfficialsCtrl'
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
+    .state('tab.official-detail', {
+      url: '/officials/:officialId',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
+        'tab-officials': {
+          templateUrl: 'templates/official-detail.html',
+          controller: 'OfficialDetailCtrl'
         }
       }
     })
 
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.categories', {
+      url: '/categories',
+      views: {
+        'tab-categories': {
+          templateUrl: 'templates/tab-categories.html',
+          controller: 'CategoriesCtrl'
+        }
+      }
+    })
+    .state('tab.category-detail', {
+      url: '/categories/:categoryId',
+      views: {
+        'tab-categories': {
+          templateUrl: 'templates/category-detail.html',
+          controller: 'CategoryDetailCtrl'
+        }
+      }
+    })
+
+  .state('tab.votes', {
+      url: '/votes',
+      views: {
+        'tab-votes': {
+          templateUrl: 'templates/tab-votes.html',
+          controller: 'VotesCtrl'
+        }
+      }
+    })
+    .state('tab.vote-detail', {
+      url: '/votes/:voteId',
+      views: {
+        'tab-votes': {
+          templateUrl: 'templates/vote-detail.html',
+          controller: 'VoteDetailCtrl'
+        }
+      }
+    })
+
+  .state('tab.settings', {
+    url: '/settings',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-settings': {
+        templateUrl: 'templates/tab-settings.html',
+        controller: 'SettingsCtrl'
       }
     }
   });
