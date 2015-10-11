@@ -59,6 +59,15 @@ angular.module('starter', ['ionic'])
         }
       }
     })
+    .state('tab.officials-list', {
+      url: '/officials-list/:groupId',
+      views: {
+        'tab-officials': {
+          templateUrl: 'templates/officials/tab-officials-list.html',
+          controller: 'OfficialsListCtrl'
+        }
+      }
+    })
     .state('tab.official-detail', {
       url: '/officials/:officialId',
       views: {
