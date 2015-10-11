@@ -22,17 +22,23 @@
         </div>
         <p class="question">{{vote.question}}</p>
         <div class="my-vote">
-          <button class="button button-clear button-light">
+          <button class="button button-clear button-light" ng-click="votes.upVote(vote)" ng-hide="votes.upVoted(vote)">
             <i class="icon ion-thumbsup"></i>
           </button>
-          <button class="button button-clear button-light">
+          <button class="button button-clear button-balanced" ng-click="votes.upVote(vote)" ng-show="votes.upVoted(vote)">
+            <i class="icon ion-thumbsup"></i>
+          </button>
+          <button class="button button-clear button-light" ng-click="votes.downVote(vote)" ng-hide="votes.downVoted(vote)">
+            <i class="icon ion-thumbsdown"></i>
+          </button>
+          <button class="button button-clear button-assertive" ng-click="votes.downVote(vote)" ng-show="votes.downVoted(vote)">
             <i class="icon ion-thumbsdown"></i>
           </button>
         </div>
-        <div class="pending-result">
+        <div class="pending-result" ng-hide="votes.votedFor(vote)">
           <span>Vote to see results</span>
         </div>
-        <div class="result">
+        <div class="result" ng-show="votes.votedFor(vote)">
           <button class="button button-clear button-balanced">
             <i class="icon ion-thumbsup"></i>
             {{vote.totalAgree}}</p>
