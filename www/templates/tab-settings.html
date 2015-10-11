@@ -1,9 +1,15 @@
 <ion-view view-title="Settings">
   <ion-content>
     <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
+      <ion-toggle  ng-model="settings.enableEmail">
+          Email Notification
+      </ion-toggle>
+      <ion-toggle  ng-model="settings.enablePush">
+          Push Notification
+      </ion-toggle>
+      <ion-toggle  ng-model="settings.enableSms">
+          SMS Notification
+      </ion-toggle>
     </ion-list>
   </ion-content>
 </ion-view>

@@ -11,6 +11,7 @@
       <h4>{{officialDetail.official.name}}</h4>
       <p>Constituency: {{officialDetail.official.constituency}}</p>
     </div>
+    <ion-toggle ng-model="airplaneMode" toggle-class="toggle-balanced" class="clearfix">Following</ion-toggle>
     <ul class="list padding-top">
       <li class="item item-divider">Ministry</li>
       <li ng-repeat="post in officialDetail.official.ministry.split(', ')" class="item">{{post}}</li>
